@@ -27,7 +27,11 @@ React is a library that Facebook invented to help build custom HTML elements. Re
 *Before this workshop, developers should already be able to:*
 
 * Write client-side applications in JavaScript
-* Knowledge of build tools, we will be using <u>gulp</u> in this lesson and <u>webpack</ul> in demo
+* Knowledge of build tools, we will be using <u>gulp</u> in this lesson and <u>webpack</ul> is used in my demos
+
+## What is Gulp and Webpack?
+
+* These are build tools used with React to compile our JavaScript code. Because React uses JSX and ES6 we need to make these new parts of JS compatible with our browsers.
 
 ## From Docs
 
@@ -36,6 +40,18 @@ React is a library that Facebook invented to help build custom HTML elements. Re
 >Many people choose to think of React as the V in MVC.
 
 >In fact, with React the only thing you do is build components. Since they're so encapsulated, components make code reuse, testing, and separation of concerns easy.
+
+## New Concepts!
+
+* ES6
+ * `const` - strict version of var / let - `const` means that the identifier cannot be reassigned
+ * `let` - similar to variable - usually used to signal that this variable needs to be reassigned
+ * `var hello = () => console.log("hello world!")`
+ * Fun blog post about new features of [ES6](http://webapplog.com/es6/)
+* JSX
+* Decoupled Web Apps
+* Build Tools and Build Packs
+
 
 ## JSX
 
@@ -46,6 +62,16 @@ var myElement = <MyComponent someProperty={true}/>;
 ```
 
 Here's an example of JSX, don't worry about understanding it just yet.
+
+```js
+  React.createElement('a', {href: 'https:/.facebook.github.io/react/'}, 'Link to React')
+```
+This will become:
+```html
+  <a href="https://facebook.github.io/react/">Link to React</a>
+```
+
+**Another Example**
 
 ```js
 var Nav, Profile;
