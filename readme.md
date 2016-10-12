@@ -60,12 +60,17 @@ var app = React.createElement(
 
 ## Setup
 
-###JSX Syntax in Sublime
+### JSX Syntax in Sublime and Atom
 
 To view JSX appropriately in Sublime:
 
 * Install the package `babel` in sublime
-* Select syntax `Babel > Javascript (Babel)` 
+* Select syntax `Babel > Javascript (Babel)`
+
+To view JS in Atom:
+* Install the Atom Package Manager `atom react`
+* `apm install react` into your cli
+
 
 ###Getting Started
 
