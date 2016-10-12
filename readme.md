@@ -1,11 +1,12 @@
 <!--
 Creator: Ilias
+Update by: Matt L
 Market: SF
 -->
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-#ReactJS
+# ReactJS
 
 ### Why is this important?
 <!-- framing the "why" in big-picture/real world examples -->
@@ -26,9 +27,9 @@ React is a library that Facebook invented to help build custom HTML elements. Re
 *Before this workshop, developers should already be able to:*
 
 * Write client-side applications in JavaScript
-* Knowledge of Gulp as a build tool
+* Knowledge of build tools, we will be using <u>gulp</u> in this lesson and <u>webpack</ul> in demo
 
-##From Docs
+## From Docs
 
 >We built React to solve one problem: **building large applications with data that changes over time**.
 
@@ -36,7 +37,7 @@ React is a library that Facebook invented to help build custom HTML elements. Re
 
 >In fact, with React the only thing you do is build components. Since they're so encapsulated, components make code reuse, testing, and separation of concerns easy.
 
-##JSX
+## JSX
 
 JSX is a JavaScript syntax extension that looks similar to XML that helps represent DOM elements in JavaScript.
 
@@ -60,14 +61,18 @@ var app = React.createElement(
 
 ## Setup
 
-###JSX Syntax in Sublime
+### JSX Syntax in Sublime and Atom
 
 To view JSX appropriately in Sublime:
 
 * Install the package `babel` in sublime
-* Select syntax `Babel > Javascript (Babel)` 
+* Select syntax `Babel > Javascript (Babel)`
 
-###Getting Started
+To view JS in Atom:
+* Install the Atom Package Manager `atom react`
+* `apm install react` into your cli
+
+### Getting Started
 
 `cd` into `starter-code`
 
@@ -123,7 +128,7 @@ export default class HelloWorld extends React.Component {
 }
 ```
 
-###The Virtual DOM
+### The Virtual DOM
 
 * Every component has, at minimum, a render method that generates a Virtual DOM node to be added to the actual DOM.
 * A Virtual DOM is just like a regular ol' DOM node, but it's not yet attached to the DOM. Try typing `var photo = new Image` in the console; that `photo` is part of the virtual DOM.
@@ -152,7 +157,7 @@ In your `app/index.jsx` let's import the new component and render it to the DOM.
 import React from 'react'
 import ReactDOM from 'react-dom'
 import HelloWorld from './components/hello-world'
- 
+
 ReactDOM.render(
   <HelloWorld/>,
   document.getElementById("hello-world-component")
@@ -242,7 +247,7 @@ ReactDOM.render(
 
 </details>
 
-###Variable Props
+### Variable Props
 
 What if we don't know exactly what props we're going to get but we want to pass them to the element. We can do this with something new in ES6 called a [spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator).
 
@@ -271,7 +276,7 @@ ReactDOM.render(
 )
 ```
 
-###Nested Components
+### Nested Components
 
 What if we want to add text just above our Image, but want it also to be wrapped in the anchor tag so it is clickable, like the image?
 
@@ -302,12 +307,12 @@ class ProfilePic extends React.Component {
 
 ```
 
-###Challenge: Mr Cat's Profile
+### Challenge: Mr Cat's Profile
 
 * Pass an `id` into the `ProfilePic` component that is `"mr-cat"`
 * Pass a `p` child, below the `h3`, into the `ProfilePic` component with the class `"bio"` that contains a brief description of this kitty.
 
-##Exercise: A Blog Post
+## Exercise: A Blog Post
 
 Let's practice what we've learned so far by building a `Post` component for our blog.
 
