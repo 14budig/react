@@ -68,7 +68,7 @@ To view JSX appropriately in Sublime:
 * Install the package `babel` in sublime
 * Select syntax `Babel > Javascript (Babel)`
 
-To view JS in Atom:
+To view JSX in Atom:
 * Install the Atom Package Manager `atom react`
 * `apm install react` into your cli
 
