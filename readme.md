@@ -27,7 +27,7 @@ React is a library that Facebook invented to help build custom HTML elements. Re
 *Before this workshop, developers should already be able to:*
 
 * Write client-side applications in JavaScript
-* Knowledge of build tools, we will be using <u>gulp</u> in this lesson and <u>webpack</u> is used in my demos
+* Knowledge of build tools, we will be using <u>gulp</u> in this lesson and **webpack** is used in my demos
 
 ## What is Gulp and Webpack?
 
@@ -129,6 +129,18 @@ class HelloWorld extends React.Component {
   }
 }
 ```
+
+Old Syntax 
+```js
+  var HelloWorld = React.createClass({
+    render: function() {
+      return (
+        <p>Hello World!</p>
+      );
+    }
+  })
+```
+
 From above, we can see that we are create a new Component class that is inheriting from `React.Component`. It has one function `render`. React expects `render` to be defined as that is the function that will get called when it is being rendered to the DOM. Note we are using ES6's [method definition syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions#Description).
 
 Don't forget to require `React` and export your new component!
