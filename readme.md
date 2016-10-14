@@ -27,11 +27,13 @@ React is a library that Facebook invented to help build custom HTML elements. Re
 *Before this workshop, developers should already be able to:*
 
 * Write client-side applications in JavaScript
-* Knowledge of build tools, we will be using <u>gulp</u> in this lesson and <u>webpack</ul> is used in my demos
+* Knowledge of build tools, we will be using <u>gulp</u> in this lesson and <u>webpack</u> is used in my demos
 
 ## What is Gulp and Webpack?
 
 * These are build tools used with React to compile our JavaScript code. Because React uses JSX and ES6 we need to make these new parts of JS compatible with our browsers.
+* Theses two build tools are going to all of our JavaScript code and will create a bundle.js file. This is important because you will be building different components in different files and will need to grab all of them for your front-end.
+* This style really is what makes React, being very modular and component based. You can think of this like the asset tree in rails, there is an engine that is built in that does it well. We need to add it ourselves for React.
 
 ## From Docs
 
