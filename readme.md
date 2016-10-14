@@ -130,7 +130,7 @@ class HelloWorld extends React.Component {
 }
 ```
 
-Old Syntax 
+**Old Syntax**
 ```js
   var HelloWorld = React.createClass({
     render: function() {
@@ -159,13 +159,26 @@ export default HelloWorld
 It could be refactored to [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) the new class in the same line it is being defined.
 
 ```js
-import React from "react"
+import React { Component } from "react"
 
-export default class HelloWorld extends React.Component {
+export default class HelloWorld extends React {
   render() {
     return <p>Hello World!</p>
   }
 }
+```
+**And Old Syntax**
+```js
+var React = require('react')
+
+var HelloWorld = React.createClass({
+  render: function() {
+    return (
+      <p>Hello World!</p>
+    );
+  }
+})
+React.export = HelloWorld
 ```
 
 ### The Virtual DOM
