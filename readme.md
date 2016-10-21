@@ -100,6 +100,10 @@ To view JSX in Atom:
 * Install the Atom Package Manager `atom react`
 * `apm install react` into your cli
 
+## Before We Start:
+
+Check for understanding: lets review these new concepts and where you see them in the [documentation](https://facebook.github.io/react/). Lets take 5-10 minutes to look through facebook's docs to learn more!
+
 ### Getting Started
 
 `cd` into `starter-code`
