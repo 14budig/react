@@ -1,8 +1,3 @@
 "use strict"
-
-import React from 'react'
-import ReactDOM from 'react-dom'
-import HelloWorld from './components/hello-world'
-
-
-ReactDOM.render({})
+// TODO: We need to import some parts of the react library, and we need to append it to the page
+// Notice we are using 'use strict' here
